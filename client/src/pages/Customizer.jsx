@@ -54,7 +54,7 @@ const handleOnSubmit= async(type)=>{
   try {
     //call backend to generate AI image
     setGenImg(true)
-    const response = await fetch('https://threedrip.onrender.com/api/v1/dalle',{
+    const response = await fetch('https://tshirt-creator-server.vercel.app/api/v1/dalle',{
       method:'POST',
       headers: {
           'Content-Type': 'application/json'
